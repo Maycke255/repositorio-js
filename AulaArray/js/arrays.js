@@ -30,4 +30,13 @@ console.log(slice2);
 let concat = exemplo.concat(arrayConcat, arrayConcatString)
 console.log(concat)
 
+let removeArray = concat.splice(10, 2, `Esse`, `e o splice`)
+console.log(removeArray)
+console.log(concat)
+
 console.log(exemplo);
+
+for (i = 0 ; i < concat.length ; i++) {
+    const total = concat[i]
+    console.log(`${total} Posição atual: ${i}`)
+}
